@@ -11,7 +11,7 @@ class Pratice2 {
     // 双链表
     DlistChange(2, 3);
     // 单链表
-    SlistedChange(2, 3);
+    SlistedChange(0, 1);
 
   }
 
@@ -44,17 +44,17 @@ class Pratice2 {
     // 交换
     Snode tmp1 = Shead;
     Snode p1_pre = null, p1 = null, p2 = null; // 交换位置的节点
-    int index = -1; // 索引
+    int index = 0; // 索引
     while (tmp1.next != null) {
-      if (index == pos1 - 1) {
+      if (index == pos1) {
 //				System.out.printf("pos1-1:%d\n", pos1-1);
         p1_pre = tmp1;
       }
-      if (index == pos1) {
+      if (index == pos1 + 1) {
 //				System.out.printf("pos1:%d\n", pos1);
         p1 = tmp1;
       }
-      if (index == pos2) {
+      if (index == pos2 + 1) {
 //				System.out.printf("pos2:%d\n", pos2);
         p2 = tmp1;
         // 交换
